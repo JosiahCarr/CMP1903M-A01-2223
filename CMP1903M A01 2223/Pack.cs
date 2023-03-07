@@ -31,8 +31,40 @@ namespace CMP1903M_A01_2223
 
         }
 
+        // generate a random number from 1 to n, intended to find random locations to shuffle to
+        private static int randomNumber(int n)
+        {
+            Random random = new Random();
+            int r = random.Next(1, n);
+            return r;
+        }
+
+        // fisher-Yates shuffle
+        private static List<Card> fisherYatesShuffle()
+        {
+            return null;
+        }
+
+        // riffle shuffle
+        private static List<Card> riffleShuffle()
+        {
+            return null;
+        }
+
         public static bool shuffleCardPack(int typeOfShuffle)
         {
+            if (typeOfShuffle == 1)
+            {
+
+            }
+            else if (typeOfShuffle == 2)
+            {
+
+            }
+            else
+            {
+
+            }
             //Shuffles the pack based on the type of shuffle
             return false;
         }
