@@ -14,8 +14,16 @@ namespace CMP1903M_A01_2223
         public Pack()
         {
             //Initialise the card pack here
-            for (int i = 0; i <= 4; i++) {
-                pack.Add(new Card());
+
+            //the for loop loops through the suits 1 - 4
+            for (int i = 1; i <= 4; i++) {
+                //In every suit 13 cards are added of different values, 1 - 13
+                for (int j = 1; j <= 13; j++)
+                {
+                    //Every card that is created is sent to the pack list with i and j as arguments in the format Suit, Value
+                    pack.Add(new Card(i, j));
+                }
+                    
             }
 
             Console.WriteLine("The pack");

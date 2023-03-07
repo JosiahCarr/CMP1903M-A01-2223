@@ -8,3 +8,11 @@ C:\Users\J.S.Z.C\Documents\Projects\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debu
 C:\Users\J.S.Z.C\Documents\Projects\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
 C:\Users\J.S.Z.C\Documents\Projects\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
 C:\Users\J.S.Z.C\Documents\Projects\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe.config
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.pdb
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
+C:\Users\J.S.Z.C\source\repos\CMP1903M-A01-2223\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
