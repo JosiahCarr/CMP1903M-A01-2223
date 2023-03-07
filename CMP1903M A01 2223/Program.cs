@@ -10,9 +10,10 @@ namespace CMP1903M_A01_2223
     {
         static void Main(string[] args)
         {
+            //
             Console.WriteLine("Hello!!!");
-            Console.ReadLine();
             Pack card_pack = new Pack();
+            Console.ReadLine();
 
         }
 

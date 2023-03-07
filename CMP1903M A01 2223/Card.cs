@@ -12,6 +12,11 @@ namespace CMP1903M_A01_2223
         //Value: numbers 1 - 13
         //Suit: numbers 1 - 4
         //The 'set' methods for these properties could have some validation
+        public Card(int Value, int Suit)
+        {
+            Console.WriteLine(Value + "Card" + Suit);
+        }
+
         public int Value { get; set; }
         public int Suit { get; set; }
     }
