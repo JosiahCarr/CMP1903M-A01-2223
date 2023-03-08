@@ -12,12 +12,21 @@ namespace CMP1903M_A01_2223
         //Value: numbers 1 - 13
         //Suit: numbers 1 - 4
         //The 'set' methods for these properties could have some validation
-        public Card(int Value, int Suit)
+        public Card()
         {
-            Console.WriteLine(Value + "Card" + Suit);
+
+            string[] Values = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+            string[] Suits = {"Clubs", "Hearts", "Diamonds", "Spades"};
+            //Console.WriteLine(Values[Value] + " of " + Suits[Suit]);
         }
 
         public int Value { get; set; }
+        /**
+        {
+            get { return this.Value; }
+            set { this.Value = value; }
+        }
+        **/
         public int Suit { get; set; }
     }
 }
