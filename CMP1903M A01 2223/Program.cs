@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,9 +13,7 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             //
-            Console.WriteLine("Hello!!!");
-            Pack card_pack = new Pack();
-            Console.ReadLine();
+            Testing test = new Testing();
 
         }
 
