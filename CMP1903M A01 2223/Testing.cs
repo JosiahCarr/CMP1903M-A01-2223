@@ -1,5 +1,6 @@
 ﻿using CMP1903M_A01_2223;
 using System;
+using System.Collections.Generic;
 
 public class Testing
 {
@@ -11,8 +12,8 @@ public class Testing
         string[] Values = { "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
         string[] Suits = { "Clubs", "Hearts", "Diamonds", "Spades" };
 
+        //Shuffles shuffle = new Shuffles();
         //Pack cardPack = new Pack();
-        Shuffles shuffle = new Shuffles();
 
         Pack.shuffleCardPack(1); //test the fisher Yates shuffle 
         Pack.shuffleCardPack(2); //test the riffle shuffle
@@ -26,7 +27,27 @@ public class Testing
         }
 
         Card deal = Pack.deal();
-        Console.WriteLine("Dealt Card: ", deal.Value, deal.Suit);
+        if (deal != null) //check if card is valid
+        {
+            Console.WriteLine("Dealt Card: ", deal.Value, deal.Suit);
+        }
+
+        List<Card> dealtCards = Pack.dealCard(7);
+        if (dealtCards != null) //check if cards are valid
+        {
+            Console.WriteLine("\n Pack: ");
+            for (int i = 0; i < Pack.pack.Count; i++)
+            {
+                
+                Console.WriteLine(Values[Pack.pack[i].Value - 1] + " " + Suits[Pack.pack[i].Suit - 1]);
+            }
+            Console.WriteLine("\n Dealt cards: ");
+            for (int i = 0; i < dealtCards.Count; i++)
+            {
+                
+                Console.WriteLine(Values[dealtCards[i].Value - 1] + " " + Suits[dealtCards[i].Suit - 1]);
+            }
+        }
 
         //Shuffles shuffles = new Shuffles ();
         Console.ReadLine();

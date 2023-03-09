@@ -69,19 +69,18 @@ namespace CMP1903M_A01_2223
 
         public static Card deal()
         {
-            Card dealtCard = pack[0];
-
             if (Pack.pack.Count > 0) // first check if there are enough cards to deal
             {
                 //Deals one card
+                Card dealtCard = pack[0];
                 pack.RemoveAt(0);
                 return dealtCard;
             }
-            else { return dealtCard; }
+            else { return null; }
 
         }
 
-        private static List<Card> dealCard(int amount)
+        public static List<Card> dealCard(int amount)
         {
             List<Card> cardsDealt = new List<Card>();
 
@@ -97,7 +96,7 @@ namespace CMP1903M_A01_2223
                 }
                 return cardsDealt;
             }
-            else { return cardsDealt; }
+            else { return null; }
 
         }
     }

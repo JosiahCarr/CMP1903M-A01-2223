@@ -13,7 +13,7 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             //Initiate Testing
-            
+            Pack cardPack = new Pack();
             Testing test = new Testing();
 
         }
