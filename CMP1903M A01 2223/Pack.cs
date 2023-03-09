@@ -37,19 +37,22 @@ namespace CMP1903M_A01_2223
 
         }
 
-        public bool shuffleCardPack(int typeOfShuffle)
+        public static bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
             //Shuffles shuffles = new Shuffles();
             if (typeOfShuffle == 1)
             {
-                List<Card> shuffledPack = shuffles.fisherYatesShuffle(pack);
+                List<Card> shuffledPack = Shuffles.fisherYatesShuffle(pack);
+                Console.WriteLine(shuffledPack);
                 pack = shuffledPack;
+                //return true;
             }
             else if (typeOfShuffle == 2)
             {
-                List<Card> shuffledPack = riffleShuffle(pack);
+                List<Card> shuffledPack = Shuffles.riffleShuffle(pack);
                 pack = shuffledPack;
+                //return true;
             }
             else if (typeOfShuffle == 3)
             {
@@ -66,14 +69,15 @@ namespace CMP1903M_A01_2223
 
         public static Card deal()
         {
-            if (Pack.pack.Count > 0)
+            Card dealtCard = pack[0];
+
+            if (Pack.pack.Count > 0) // first check if there are enough cards to deal
             {
                 //Deals one card
-                Card dealtCard = pack[0];
                 pack.RemoveAt(0);
                 return dealtCard;
             }
-            else { return null; }
+            else { return dealtCard; }
 
         }
 
@@ -81,7 +85,7 @@ namespace CMP1903M_A01_2223
         {
             List<Card> cardsDealt = new List<Card>();
 
-            if (Pack.pack.Count >= amount)
+            if (Pack.pack.Count >= amount)// check if there are enough cards to deal
             {
                 //Deals the number of cards specified by 'amount'
                 for (int i = 0; i < amount; i++)
@@ -93,7 +97,7 @@ namespace CMP1903M_A01_2223
                 }
                 return cardsDealt;
             }
-            else { return null; }
+            else { return cardsDealt; }
 
         }
     }

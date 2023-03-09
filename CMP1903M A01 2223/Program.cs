@@ -13,7 +13,7 @@ namespace CMP1903M_A01_2223
         static void Main(string[] args)
         {
             //Initiate Testing
-            Shuffles shuffle = new Shuffles();
+            
             Testing test = new Testing();
 
         }

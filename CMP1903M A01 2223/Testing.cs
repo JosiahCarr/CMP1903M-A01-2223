@@ -11,12 +11,13 @@ public class Testing
         string[] Values = { "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
         string[] Suits = { "Clubs", "Hearts", "Diamonds", "Spades" };
 
-        Pack cardPack = new Pack();
-        
-        Shuffles.shuffleCardPack(1); //test the fisher Yates shuffle 
-        //Pack.shuffleCardPack(2); //test the riffle shuffle
-        Shuffles.shuffleCardPack(3); //test no shuffle
-        Shuffles.shuffleCardPack(4); //test an unexpected value 
+        //Pack cardPack = new Pack();
+        Shuffles shuffle = new Shuffles();
+
+        Pack.shuffleCardPack(1); //test the fisher Yates shuffle 
+        Pack.shuffleCardPack(2); //test the riffle shuffle
+        Pack.shuffleCardPack(3); //test no shuffle
+        Pack.shuffleCardPack(4); //test an unexpected value 
 
         //read all the cards to see if they have been shuffled correctly
         for (int i = 0; i < Pack.pack.Count; i++)
@@ -24,9 +25,9 @@ public class Testing
             Console.WriteLine(Values[Pack.pack[i].Value-1] + " " + Suits[Pack.pack[i].Suit-1]); //present the card in a easy to understand form
         }
 
-        //CardPile cardPile = new CardPile();
         Card deal = Pack.deal();
-        //cardPile.addCard(deal);
+        Console.WriteLine("Dealt Card: ", deal.Value, deal.Suit);
+
         //Shuffles shuffles = new Shuffles ();
         Console.ReadLine();
 

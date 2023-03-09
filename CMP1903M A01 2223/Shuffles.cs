@@ -50,7 +50,7 @@ namespace CMP1903M_A01_2223
 
 
         // riffle shuffle
-        static List<Card> riffleShuffle(List<Card> shuffledPack)
+        public static List<Card> riffleShuffle(List<Card> shuffledPack)
         {
             //riffle shuffle distributes the cards from the left to the right randomly and vice versa
             //in this algorithm the lower index values represent the left and the highest index values represent the right, split
