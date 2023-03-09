@@ -15,18 +15,47 @@ namespace CMP1903M_A01_2223
         public Card()
         {
 
-            string[] Values = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-            string[] Suits = {"Clubs", "Hearts", "Diamonds", "Spades"};
-            //Console.WriteLine(Values[Value] + " of " + Suits[Suit]);
         }
 
-        public int Value { get; set; }
-        /**
+        //Use of encapsulation, data is encapsulated using private variables, which are accessed via the setters and getters
+        //which also have valitdation checking, further increasing the security of the data
+        private int value;
+        public int Value 
         {
-            get { return this.Value; }
-            set { this.Value = value; }
+            get
+            {
+                return (this.value);
+            }
+            set
+            {
+                this.value = value;
+                if (this.value > 13 || this.value < 1)
+                {
+                    Console.WriteLine("Card Value received value outside its range");
+                }
+                
+            }
+                    
         }
-        **/
-        public int Suit { get; set; }
+
+        private int suit;
+        public int Suit
+        {
+            get
+            {
+                return (this.suit);
+            }
+            set
+            {
+                this.suit = value;
+                if (this.suit > 4 || this.suit < 1)
+                {
+                    Console.WriteLine("Card Suit received value outside its range");
+                }
+
+            }
+
+        }
+
     }
 }
